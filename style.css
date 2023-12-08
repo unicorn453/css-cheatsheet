@@ -1,0 +1,76 @@
+:root {
+  --text-color: #aacfde;
+  --background: rgb(185, 173, 173);
+  --column: rgb(230, 137, 137);
+}
+body {
+  background-color: var(--background);
+}
+.border {
+  background-color: var(--column);
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  margin: 20px;
+  padding: 40px;
+}
+.title {
+  padding: 5px;
+  color: var(--text-color);
+  position: absolute;
+  top: -30px;
+  left: 100px;
+  border-width: 2px;
+  border-style: solid;
+  font-size: 20px;
+  background-color: gray;
+}
+.dashed-border {
+  display: flex;
+  flex-direction: column;
+  border-width: 5px;
+  border-style: dashed;
+  border-color: skyblue;
+  width: 400px;
+  height: 300px;
+  margin: 10px;
+  position: relative;
+}
+h1,
+.firstp {
+  color: rgb(27, 90, 115);
+  text-align: center;
+}
+.code {
+  position: absolute;
+  left: 3px;
+  top: 100px;
+  border-width: 1px;
+  border-color: black;
+  border-style: solid;
+}
+p {
+  padding-top: 30px;
+}
+pre {
+  user-select: all;
+  background: linear-gradient(
+      217deg,
+      rgba(255, 0, 0, 0.8),
+      rgba(255, 0, 0, 0) 70.71%
+    ),
+    linear-gradient(127deg, rgba(255, 132, 0, 0.8), rgba(0, 255, 0, 0) 70.71%),
+    linear-gradient(336deg, rgba(0, 0, 255, 0.8), rgba(0, 0, 255, 0) 70.71%);
+  border-width: 1px;
+  border-style: solid;
+  border-color: black;
+  width: 300px;
+  height: 300px;
+  margin: 10px;
+}
+footer {
+  text-align: center;
+  font-size: 30px;
+  margin-top: -70px;
+}
